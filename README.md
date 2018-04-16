@@ -9,7 +9,7 @@ The conversion of depth ionisation to depth dose may be performed by *e.g.*
 ```Python
 >>> iondosecvtr.cvtiondose(file='6_MeV.csv',r50d=2.34)
 ```
-where the input CSV file must be formatted as shown in [6_MeV.csv](https://github.com/archon88/iondosecvtr/blob/master/data_files/6_MeV.csv); notably, the depth is assumed to be expressed in millimetres, while QI (r50d) is in centimetres, following the convention used in the Code of Practice. This function outputs a second CSV file with two additional columns containing the water-air mass stopping power ratio (SPR) for the water depth and electron beam quality, and the relative dose at depth. Both the relative ionisation and relative dose are expressed as percentages, normalised to their respective maxima.
+where the input CSV file must be formatted as shown in [6_MeV.csv](https://github.com/archon88/iondosecvtr/blob/master/data_files/6_MeV.csv); notably, the depth is assumed to be expressed in millimetres, while QI (r50d) is in centimetres, following the convention used in the Code of Practice. This function outputs a second CSV file with two additional columns containing the water-air mass stopping power ratio (SPR) for the water depth and electron beam quality, and the relative dose at depth. Both the relative ionisation and relative dose are expressed as percentages, normalised to their respective maxima. Examples are given for electron beams of nominal energies 6 MeV and 16 MeV, corresponding to *R*<sub>50,*D*</sub> = 2.34 cm and *R*<sub>50,*D*</sub> = 6.65 cm respectively.
 
 Then, plots of the relative dose, relative ionisation, and SPR against depth may be created by passing the name of the file output by **cvtiondose** and the nominal beam energy (in MeV):
 
