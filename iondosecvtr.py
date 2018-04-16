@@ -8,9 +8,9 @@
 #                                                                              #
 # LICENCE INFORMATION                                                          #
 #                                                                              #
-# This program provides a simple means of calculating the treatment time for   #
-# an interstitial brachytherapy implant with a geometry comprising equilateral #
-# triangles.                                                                   #
+# This program provides a simple means of converting the relative ionisation   #
+# at depth to the relative dose at depth for a clinical electron beam,         #
+# following the Code of Practice.                                              #
 #                                                                              #
 # (C) 2018 Gavin Donald Kirby                                                  #
 # Intial version created 2018-04-16T16:20:00Z                                  #
