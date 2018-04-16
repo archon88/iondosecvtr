@@ -85,8 +85,6 @@ def cvtiondose(file,r50d):
     
     df.to_csv(outfile, index=False)
     
-    return None
-
 def makeplots(file, energy):
     
     try:
@@ -120,7 +118,6 @@ def makeplots(file, energy):
     plotname=os.path.splitext(file)[0]+'_SPR.png'
     
     plt.savefig(plotname,dpi=900)
-    
  
 if __name__ == "__main__":
     print('This is iondosecvtr version {version}'.format(version=__version__))
