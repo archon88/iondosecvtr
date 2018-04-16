@@ -1,6 +1,6 @@
 # iondosecvtr
 
-A simple Python utility to convert relative depth ionisation to relative depth dose, in line with the formalism outlined in the Code of Practice. The empirical formula used to compute the water-air mass stopping power ratios is valid for clinical electron beams with QI between 1 cm and 20 cm and for water depths between 0.02×R<sub>50,D</sub> and 1.2×R<sub>50,D</sub>.
+A simple Python utility to convert relative depth ionisation to relative depth dose, in line with the formalism outlined in the Code of Practice. The empirical formula used to compute the water-air mass stopping power ratios is valid for clinical electron beams with QI between 1 cm and 20 cm and for water depths between 0.02×*R*<sub>50,*D*</sub> and 1.2×*R*<sub>50,*D*</sub>.
 
 # usage
 
