@@ -49,12 +49,12 @@ def sprcalc(zw,r50d):
         raise ValueError('R_(50,D) must be between 1 cm and 20 cm!')
     
     if not 0.02*r50d < zw < 1.2*r50d:
-        raise ValueError('z_w must be between 0.02*R_(50,D) and 1.2*R_(50,D)! Current zw is {zw}, which falls outside the range ({lower},{upper}).'.format(zw=zw,lower=0.02*r50d,upper=1.2*r50d))
+        raise ValueError('z_w must be between 0.02*R_(50,D) and 1.2*R_(50,D)! Current z_w is {zw}, which falls outside the range ({lower},{upper}).'.format(zw=zw,lower=0.02*r50d,upper=1.2*r50d))
     
     x = m.log(r50d)
     y = zw/r50d
     
-    spr = (1.075 -0.5087*x + 0.0887*np.power(x,2) - 0.084*y)/(1 - 0.4281*x + 0.0646*np.power(x,2) + 0.00309*np.power(x,3)  - 0.125*y)
+    spr = (1.075 - 0.5087*x + 0.0887*np.power(x,2) - 0.084*y)/(1 - 0.4281*x + 0.0646*np.power(x,2) + 0.00309*np.power(x,3) - 0.125*y)
     
     return spr
 
