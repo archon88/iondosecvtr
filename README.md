@@ -16,3 +16,5 @@ Then, plots of the relative dose, relative ionisation, and SPR against depth may
 ```Python
 >>> iondosecvtr.makeplots(file='6_MeV_withdose.csv',energy=6)
 ```
+
+This code was validated against an Excel spreadsheet.
