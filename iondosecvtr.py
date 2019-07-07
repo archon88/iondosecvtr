@@ -56,12 +56,12 @@ def calculate_spr(zw, r50d):
         raise ValueError('R_(50,D) must be between 1 cm and 20 cm!')    
     if not 0.02*r50d < zw < 1.2*r50d:
         raise ValueError(f'z_w must be between 0.02*R_(50,D) and 1.2*R_(50,D)!\
-        Current z_w is {zw}, which falls outside the range ({0.02*r50d},{1.2*r50d}).')
+        Current z_w is {zw}, which falls outside the range ({0.02*r50d}, {1.2*r50d}).')
     
     x = m.log(r50d)
     y = zw/r50d
     # Use empirical formula from Code of Practice.
-    return (1.075 - 0.5087*x + 0.0887*pow(x,2) - 0.084*y) / (1 - 0.4281*x + 0.0646*pow(x,2) + 0.00309*pow(x,3) - 0.125*y)    
+    return (1.075 - 0.5087*x + 0.0887*pow(x, 2) - 0.084*y) / (1 - 0.4281*x + 0.0646*pow(x, 2) + 0.00309*pow(x, 3) - 0.125*y)    
 
 
 def convert_ionisation_dose(file, r50d):
